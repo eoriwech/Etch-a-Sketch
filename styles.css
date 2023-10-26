@@ -21,7 +21,3 @@ button {
 .gridDiv {
     background-color: yellow;
 }
-
-.gridDiv:hover {
-    background-color: green;
-}
