@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: auto;
+    width: 640px;
+    height: 640px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+}
+
+.gridDiv {
+    background-color: yellow;
+}
+
+.gridDiv:hover {
+    background-color: green;
+}
