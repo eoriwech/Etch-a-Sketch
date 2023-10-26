@@ -12,3 +12,10 @@ function genSketchPad(gridNum) {
     }
 }
 
+//Remove all the current square grids
+function removeAllChild(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
