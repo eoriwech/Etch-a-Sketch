@@ -10,6 +10,19 @@ function genSketchPad(gridNum) {
         childDiv.setAttribute("class", "gridDiv");
         childDiv.style.width = childDiv.style.height = `${gridContainerSize / gridNum}px`;
         containerDiv.appendChild(childDiv);
+
+    //Event listener to change the background color of square when mouse moves over
+    childDiv.addEventListener("mouseover", (event) => {
+        let randomNum1 = Math.floor(Math.random() * 257);
+        let randomNum2 = Math.floor(Math.random() * 257);
+        let randomNum3 = Math.floor(Math.random() * 257);
+        event.target.style.backgroundColor = `rgb(${randomNum1}, ${randomNum2}, ${randomNum3})`;
+    })
+    
+    //Event listener to return to original background color when mouse moves away
+    childDiv.addEventListener("mouseout", (event) => {
+        event.target.style.backgroundColor = "yellow";
+    })
     }
 }
 
