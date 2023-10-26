@@ -19,3 +19,11 @@ function removeAllChild(parent) {
     }
 }
 
+//Generate number of square grids according to the user
+button.addEventListener("click", () => {
+    let userInput = prompt("How many square grids per side do you want?");
+    let result = parseInt(userInput);
+    removeAllChild(containerDiv);
+    genSketchPad(result);
+})
+
